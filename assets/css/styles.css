@@ -109,6 +109,22 @@ p {
   margin-top: 0;
   margin-bottom: 15px;
 }
+
+.sidebar-wrapper h2.container-block-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.sidebar-wrapper h3.container-block-title {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
 .sidebar-wrapper .degree {
   font-size: 14px;
   margin-top: 0;
@@ -160,6 +176,36 @@ p {
 .main-wrapper .section-title {
   text-transform: uppercase;
   font-size: 20px;
+  font-weight: 500;
+  color: #2d7788;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.main-wrapper h2.section-title {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  color: #2d7788;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.main-wrapper h3.section-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  color: #2d7788;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.main-wrapper h4.section-title {
+  text-transform: uppercase;
+  font-size: 16px;
   font-weight: 500;
   color: #2d7788;
   position: relative;
