@@ -1,0 +1,1 @@
+wkhtmltopdf --viewport-size 1280x1024 https://nlabbe.github.io/ nlabbe-cv.pdf
