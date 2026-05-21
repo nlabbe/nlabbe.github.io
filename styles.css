@@ -1,10 +1,13 @@
 :root {
-  --bg: #f3f5f8;
+  --bg: #e8eef4;
   --surface: #ffffff;
   --text: #1a2433;
   --muted: #4f6076;
-  --accent: #1f4a7c;
+  --accent: #2d7788;
+  --accent-strong: #1f5664;
+  --accent-soft: #e7f4f7;
   --border: #dbe3ee;
+  --shadow: 0 20px 60px rgba(31, 86, 100, 0.12);
 }
 
 * {
@@ -17,10 +20,17 @@ html {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.55;
   color: var(--text);
-  background: var(--bg);
+  background:
+    linear-gradient(135deg, rgba(45, 119, 136, 0.18), transparent 32rem),
+    linear-gradient(315deg, rgba(31, 74, 124, 0.1), transparent 28rem),
+    var(--bg);
+}
+
+.icon-sprite {
+  display: none;
 }
 
 .skip-link {
@@ -39,18 +49,22 @@ body {
 }
 
 .page {
-  max-width: 920px;
+  max-width: 980px;
   margin: 2rem auto;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 2rem;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
 }
 
 .site-header {
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 1rem;
   margin-bottom: 1.5rem;
+  padding: 2rem;
+  color: #ffffff;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.14), transparent 34%),
+    linear-gradient(120deg, var(--accent-strong), var(--accent));
 }
 
 .header-top {
@@ -62,7 +76,7 @@ body {
 
 .identity {
   display: flex;
-  gap: 1rem;
+  gap: 1.25rem;
   align-items: center;
   min-width: 0;
 }
@@ -74,7 +88,7 @@ body {
   place-items: center;
   overflow: hidden;
   flex: 0 0 auto;
-  border: 1px solid var(--border);
+  border: 1px solid rgba(255, 255, 255, 0.34);
   background: #eef3f8;
   color: var(--accent);
   font-weight: 700;
@@ -85,6 +99,7 @@ body {
   height: 7rem;
   border-radius: 50%;
   font-size: 1.45rem;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.22);
 }
 
 .profile-photo img,
@@ -99,54 +114,114 @@ body {
 
 h1 {
   margin: 0;
-  font-size: clamp(1.8rem, 2.8vw, 2.25rem);
+  font-size: clamp(2rem, 3.2vw, 2.7rem);
   line-height: 1.2;
 }
 
 .headline {
   margin: 0.4rem 0 0;
-  color: var(--accent);
+  color: #d9f4f8;
   font-weight: 600;
 }
 
 .print-btn {
-  border: 1px solid var(--border);
-  background: #fff;
-  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
   font-weight: 600;
   padding: 0.6rem 0.85rem;
   border-radius: 8px;
   cursor: pointer;
+  backdrop-filter: blur(10px);
 }
 
 .print-btn:hover,
 .print-btn:focus-visible {
-  border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.button-icon {
+  width: 1rem;
+  height: 1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .contact ul {
-  margin: 1rem 0 0;
+  margin: 1.35rem 0 0;
   padding: 0;
   list-style: none;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.contact li {
+  display: inline-flex;
+  align-items: center;
   gap: 0.35rem;
+  min-height: 2rem;
+  padding: 0.35rem 0.55rem;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.contact-icon {
+  width: 1rem;
+  height: 1rem;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.9;
 }
 
 .contact a {
   color: inherit;
 }
 
+main {
+  padding: 0 2rem 2rem;
+}
+
 main section {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.65rem;
 }
 
 h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
   font-size: 1.15rem;
   text-transform: uppercase;
   letter-spacing: 0.02em;
   border-bottom: 1px solid var(--border);
-  padding-bottom: 0.35rem;
-  margin-bottom: 0.8rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.95rem;
+  color: var(--accent-strong);
+}
+
+.section-icon {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.42rem;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 h3 {
@@ -164,9 +239,12 @@ article {
 }
 
 .company {
-  border-left: 3px solid var(--border);
-  padding-left: 1rem;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 10px;
+  padding: 1rem;
   margin-bottom: 1.35rem;
+  background: linear-gradient(180deg, #ffffff, #fbfdff);
 }
 
 .company-header {
@@ -178,7 +256,8 @@ article {
 .company-logo {
   width: 3rem;
   height: 3rem;
-  border-radius: 8px;
+  border-color: var(--border);
+  border-radius: 10px;
   font-size: 0.9rem;
 }
 
@@ -197,7 +276,8 @@ article {
 }
 
 .role {
-  margin-top: 0.85rem;
+  margin-top: 0.95rem;
+  padding-left: 3.8rem;
 }
 
 .role + .role {
@@ -225,8 +305,22 @@ li + li {
 }
 
 .tag-list {
-  columns: 2;
-  column-gap: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+.tag-list li {
+  margin: 0;
+  padding: 0.35rem 0.55rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  font-size: 0.92rem;
+  font-weight: 600;
 }
 
 @media (max-width: 760px) {
@@ -234,6 +328,11 @@ li + li {
     margin: 0;
     border-radius: 0;
     border: none;
+    box-shadow: none;
+  }
+
+  .site-header,
+  main {
     padding: 1.25rem;
   }
 
@@ -255,7 +354,11 @@ li + li {
   }
 
   .tag-list {
-    columns: 1;
+    display: flex;
+  }
+
+  .role {
+    padding-left: 0;
   }
 }
 
@@ -282,9 +385,17 @@ li + li {
   .page {
     max-width: none;
     margin: 0;
-    padding: 0;
     border: none;
     border-radius: 0;
+    box-shadow: none;
+    overflow: visible;
+  }
+
+  .site-header,
+  main {
+    padding: 0;
+    color: var(--text);
+    background: #ffffff;
   }
 
   .print-btn,
@@ -295,6 +406,39 @@ li + li {
   a {
     color: inherit;
     text-decoration: none;
+  }
+
+  .contact ul {
+    display: grid;
+    gap: 0.2rem;
+  }
+
+  .contact li,
+  .company,
+  .tag-list li {
+    border: none;
+    background: transparent;
+    padding: 0;
+  }
+
+  .contact-icon,
+  .section-icon,
+  .button-icon {
+    display: none;
+  }
+
+  .profile-photo {
+    width: 4.5rem;
+    height: 4.5rem;
+    box-shadow: none;
+  }
+
+  .company {
+    padding-left: 0;
+  }
+
+  .role {
+    padding-left: 0;
   }
 
   .contact a[href^="http"]::after {
@@ -318,6 +462,8 @@ li + li {
   }
 
   .tag-list {
-    columns: 1;
+    display: block;
+    padding-left: 1.2rem;
+    list-style: disc;
   }
 }
