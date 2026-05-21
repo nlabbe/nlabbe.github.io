@@ -18,6 +18,76 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <svg class="icon-sprite" aria-hidden="true">
+      <symbol id="icon-user" viewBox="0 0 24 24">
+        <path d="M20 21a8 8 0 0 0-16 0" />
+        <circle cx="12" cy="7" r="4" />
+      </symbol>
+      <symbol id="icon-target" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9" />
+        <circle cx="12" cy="12" r="5" />
+        <circle cx="12" cy="12" r="1.5" />
+      </symbol>
+      <symbol id="icon-briefcase" viewBox="0 0 24 24">
+        <path d="M10 6V5a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v1" />
+        <rect x="3" y="6" width="18" height="14" rx="2" />
+        <path d="M3 12h18" />
+      </symbol>
+      <symbol id="icon-chalkboard" viewBox="0 0 24 24">
+        <rect x="3" y="4" width="18" height="13" rx="2" />
+        <path d="M8 21h8" />
+        <path d="M12 17v4" />
+        <path d="M8 9h8" />
+      </symbol>
+      <symbol id="icon-layers" viewBox="0 0 24 24">
+        <path d="m12 3 9 5-9 5-9-5 9-5Z" />
+        <path d="m3 12 9 5 9-5" />
+        <path d="m3 16 9 5 9-5" />
+      </symbol>
+      <symbol id="icon-graduation" viewBox="0 0 24 24">
+        <path d="m22 10-10-5-10 5 10 5 10-5Z" />
+        <path d="M6 12v4c2 2 10 2 12 0v-4" />
+      </symbol>
+      <symbol id="icon-cpu" viewBox="0 0 24 24">
+        <rect x="7" y="7" width="10" height="10" rx="2" />
+        <path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3" />
+      </symbol>
+      <symbol id="icon-award" viewBox="0 0 24 24">
+        <circle cx="12" cy="8" r="5" />
+        <path d="m8.5 12.5-1.5 8 5-3 5 3-1.5-8" />
+      </symbol>
+      <symbol id="icon-globe" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" />
+        <path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20" />
+      </symbol>
+      <symbol id="icon-compass" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10" />
+        <path d="m15.5 8.5-2 5-5 2 2-5 5-2Z" />
+      </symbol>
+      <symbol id="icon-map-pin" viewBox="0 0 24 24">
+        <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z" />
+        <circle cx="12" cy="10" r="3" />
+      </symbol>
+      <symbol id="icon-mail" viewBox="0 0 24 24">
+        <rect x="3" y="5" width="18" height="14" rx="2" />
+        <path d="m3 7 9 6 9-6" />
+      </symbol>
+      <symbol id="icon-phone" viewBox="0 0 24 24">
+        <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z" />
+      </symbol>
+      <symbol id="icon-link" viewBox="0 0 24 24">
+        <path d="M10 13a5 5 0 0 0 7.1 0l2-2a5 5 0 0 0-7.1-7.1l-1.1 1.1" />
+        <path d="M14 11a5 5 0 0 0-7.1 0l-2 2A5 5 0 0 0 12 20.1l1.1-1.1" />
+      </symbol>
+      <symbol id="icon-code" viewBox="0 0 24 24">
+        <path d="m16 18 6-6-6-6M8 6l-6 6 6 6" />
+      </symbol>
+      <symbol id="icon-printer" viewBox="0 0 24 24">
+        <path d="M6 9V3h12v6" />
+        <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+        <path d="M6 14h12v7H6z" />
+      </symbol>
+    </svg>
     <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
 
     <div class="page">
@@ -34,24 +104,25 @@
             </div>
           </div>
           <button class="print-btn" type="button" onclick="window.print()" aria-label="Imprimir o guardar este CV como PDF">
+            <svg class="button-icon" aria-hidden="true"><use href="#icon-printer"></use></svg>
             Imprimir / Guardar como PDF
           </button>
         </div>
 
         <nav class="contact" aria-label="Información de contacto">
           <ul>
-            <li><strong>Ubicación:</strong> Santiago, Chile</li>
-            <li><strong>Email:</strong> <a href="mailto:nlabbea@gmail.com">nlabbea@gmail.com</a></li>
-            <li><strong>Teléfono:</strong> <a href="tel:+56952558849">(+56) 9 5255 8849</a></li>
-            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/nlabbe">linkedin.com/in/nlabbe</a></li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/nlabbe">github.com/nlabbe</a></li>
+            <li><svg class="contact-icon" aria-hidden="true"><use href="#icon-map-pin"></use></svg><strong>Ubicación:</strong> Santiago, Chile</li>
+            <li><svg class="contact-icon" aria-hidden="true"><use href="#icon-mail"></use></svg><strong>Email:</strong> <a href="mailto:nlabbea@gmail.com">nlabbea@gmail.com</a></li>
+            <li><svg class="contact-icon" aria-hidden="true"><use href="#icon-phone"></use></svg><strong>Teléfono:</strong> <a href="tel:+56952558849">(+56) 9 5255 8849</a></li>
+            <li><svg class="contact-icon" aria-hidden="true"><use href="#icon-link"></use></svg><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/nlabbe">linkedin.com/in/nlabbe</a></li>
+            <li><svg class="contact-icon" aria-hidden="true"><use href="#icon-code"></use></svg><strong>GitHub:</strong> <a href="https://github.com/nlabbe">github.com/nlabbe</a></li>
           </ul>
         </nav>
       </header>
 
       <main id="main-content">
         <section aria-labelledby="summary-title">
-          <h2 id="summary-title">Resumen Profesional</h2>
+          <h2 id="summary-title"><svg class="section-icon" aria-hidden="true"><use href="#icon-user"></use></svg>Resumen Profesional</h2>
           <p>
             Arquitecto Senior de Datos con experiencia liderando iniciativas de arquitectura de datos, evolución de plataformas cloud y modernización tecnológica en organizaciones empresariales y entornos financieros regulados.
           </p>
@@ -64,7 +135,7 @@
         </section>
 
         <section aria-labelledby="expertise-title">
-          <h2 id="expertise-title">Áreas de Especialización</h2>
+          <h2 id="expertise-title"><svg class="section-icon" aria-hidden="true"><use href="#icon-target"></use></svg>Áreas de Especialización</h2>
           <ul class="tag-list">
             <li>Arquitectura Empresarial de Datos</li>
             <li>Plataformas Modernas de Datos</li>
@@ -86,7 +157,7 @@
         </section>
 
         <section aria-labelledby="experience-title">
-          <h2 id="experience-title">Experiencia Profesional</h2>
+          <h2 id="experience-title"><svg class="section-icon" aria-hidden="true"><use href="#icon-briefcase"></use></svg>Experiencia Profesional</h2>
 
           <article class="company">
             <header class="company-header">
@@ -96,8 +167,7 @@
               </div>
               <div class="company-details">
                 <h3>Banco Itaú Chile</h3>
-                <p class="company-summary">Jornada completa · 2 años</p>
-                <p class="meta">2024 – Presente | Santiago, Chile</p>
+                <p class="meta">Jornada completa · 2 años</p>
               </div>
             </header>
             <div class="role">
@@ -122,8 +192,7 @@
               </div>
               <div class="company-details">
                 <h3>Ameris</h3>
-                <p class="company-summary">Jornada completa · 2 años y 8 meses</p>
-                <p class="meta">2022 – 2024 | Santiago, Chile</p>
+                <p class="meta">Jornada completa · 2 años y 8 meses</p>
               </div>
             </header>
             <div class="role">
@@ -157,37 +226,37 @@
               </div>
               <div class="company-details">
                 <h3>Metbus S.A.</h3>
-                <p class="company-summary">Jornada completa · 5 años</p>
-                <p class="meta">2017 – 2022 | Santiago, Chile</p>
+                <p class="meta">Jornada completa · 6 años 6 meses</p>
               </div>
             </header>
             <div class="role">
-              <h4>Ingeniero de Datos y Software</h4>
-              <p class="meta">2019 – 2022</p>
-              <p>Contribuí a proyectos de operaciones críticas, analítica operacional y modernización de plataformas.</p>
+              <h4>Ingeniero de Software</h4>
+              <p class="meta">2018 – 2022 | Metbus S.A., Santiago</p>
+              <p>
+                Asumí funciones de ingeniería de software y datos para iniciativas de modernización operacional, analítica y mejora de experiencia de usuario.
+              </p>
               <ul>
-                <li><strong>SGI Predictive Service:</strong> Diseñé e implementé servicios predictivos para análisis operacional y pronóstico de transporte.</li>
-                <li><strong>SGI Storage:</strong> Diseñé e implementé una plataforma de almacenamiento cloud para soportar capacidades empresariales de información.</li>
-                <li><strong>SGI Mantenimiento:</strong> Rediseñé flujos de trabajo y procesos operacionales para mejorar eficiencia y habilitación tecnológica.</li>
-                <li><strong>SGI Mantenimiento Web:</strong> Desarrollé una plataforma web para apoyar la gestión y operación de mantenimiento.</li>
+                <li>Diseñé, desarrollé e implementé SGI-Storage, servicio de almacenamiento de archivos basado en la nube.</li>
+                <li>Diseñé, desarrollé e implementé SGI Mantenimiento Web, una aplicación web orientada a gestionar el mantenimiento de buses.</li>
+                <li>Diseñé, desarrollé e implementé SGI-PredictiveService, servicio predictivo para pronósticos de distancias de buses.</li>
+                <li>Realicé desarrollo back-end y front-end para aplicaciones como SGI-Planning, SGI-RRHH y SGI-GO.</li>
+                <li>Asumí responsabilidades de Scrum Master en el proyecto SGI-GO! UI/UX, usando prácticas ágiles SCRUM y Kanban.</li>
+                <li>Participé en iniciativas de UI/UX orientadas a mejorar la satisfacción del usuario mediante Design Sprint y rediseño de interacción con el producto.</li>
               </ul>
             </div>
             <div class="role">
-              <h4>Scrum Master</h4>
-              <p class="meta">2018 – 2019</p>
-              <ul>
-                <li>Lideré iniciativas de UI/UX utilizando prácticas ágiles de entrega y colaboración multidisciplinaria.</li>
-                <li>Coordiné equipos técnicos y stakeholders de negocio en iniciativas de transformación digital.</li>
-                <li>Facilité procesos de equipo bajo marcos SCRUM y Kanban.</li>
-              </ul>
+              <h4>Coordinador de Planificación</h4>
+              <p class="meta">2017 – 2017 | Metbus S.A., Santiago</p>
+              <p>
+                Realicé funciones de análisis, coordinación y programación de conductores para 4 terminales de la empresa, responsable de los servicios 506, 506e, 509, 506v, 546e, 510, 516, 528, 531, 532, 534c, 537, 543, 526, 531, 532 y 537.
+              </p>
             </div>
             <div class="role">
-              <h4>Desarrollador Full-Stack</h4>
-              <p class="meta">2017 – 2018</p>
-              <ul>
-                <li>Desarrollé aplicaciones corporativas para áreas de operaciones, planificación y recursos humanos.</li>
-                <li>Participé en el diseño backend y frontend bajo marcos de entrega ágil.</li>
-              </ul>
+              <h4>Ingeniero de Planificación Trainee</h4>
+              <p class="meta">2016 – 2016 | Metbus S.A., Santiago</p>
+              <p>
+                Realicé funciones de programación de conductores para el Terminal Las Palmas, responsable de los servicios 504, 507, 508, 514 y 541.
+              </p>
             </div>
           </article>
 
@@ -198,30 +267,67 @@
                 <img src="assets/companies/transportes-el-tunel.png" alt="" onerror="this.remove()" />
               </div>
               <div class="company-details">
-                <h3>Transportes El Túnel &amp; Metbus</h3>
-                <p class="company-summary">Jornada completa · 8 años</p>
-                <p class="meta">2009 – 2017 | Santiago, Chile</p>
+                <h3>Transportes El Túnel Ltda.</h3>
+                <p class="company-summary">Part time · 7 años</p>
+                <p class="meta">2009 – 2015 | Santiago, Chile</p>
               </div>
             </header>
             <div class="role">
-              <h4>Experiencia inicial en operaciones, planificación y sistemas</h4>
-              <p class="meta">2009 – 2017</p>
+              <h4>Encargado de Planificación y Operaciones</h4>
+              <p class="meta">2013 – 2015 | Transportes El Túnel Ltda., Santiago</p>
               <p>
-                Experiencia inicial en operaciones, planificación, administración de sistemas y coordinación de servicios, evolucionando progresivamente hacia roles de ingeniería, desarrollo de software y arquitectura.
+                Realicé funciones de planificación y programación de conductores, gestión de operaciones y gestión de inventario. Implementé un sistema de geolocalización. También realicé el modelamiento, rediseño y mejora de los procesos relacionados a las funciones.
+              </p>
+            </div>
+            <div class="role">
+              <h4>Administrador de Sistemas</h4>
+              <p class="meta">2011 – 2012 | Transportes El Túnel Ltda., Santiago</p>
+              <p>
+                Realicé funciones de administración de bases de datos y redes. También elaboré reportes y scripts para la obtención de datos y creación de métricas.
+              </p>
+            </div>
+            <div class="role">
+              <h4>Asistente Administrativo</h4>
+              <p class="meta">2009 – 2010 | Transportes El Túnel Ltda., Santiago</p>
+              <p>
+                Realicé labores de soporte para la administración y operación.
+              </p>
+            </div>
+          </article>
+
+        </section>
+
+        <section aria-labelledby="academic-title">
+          <h2 id="academic-title"><svg class="section-icon" aria-hidden="true"><use href="#icon-chalkboard"></use></svg>Experiencia Académica y Docencia</h2>
+          <article class="company">
+            <header class="company-header">
+              <div class="company-logo" aria-hidden="true">
+                <span>UFT</span>
+                <img src="assets/companies/finis-terrae.png" alt="" onerror="this.remove()" />
+              </div>
+              <div class="company-details">
+                <h3>Universidad Finis Terrae</h3>
+                <p class="meta">Docente part-time vespertino · 2024 – Presente</p>
+              </div>
+            </header>
+            <div class="role">
+              <h4>Docente Part-Time — Marketing, Marktech y Data Science para Marketing</h4>
+              <p class="meta">2024 – Presente | Santiago, Chile</p>
+              <p>
+                Profesor universitario en asignaturas vinculadas a marketing, tecnología y analítica aplicada, incluyendo Fundamentos del Marketing, Marktech y Data Science para Marketing.
               </p>
               <ul>
-                <li>Administración de bases de datos y redes.</li>
-                <li>Automatización operacional y generación de métricas.</li>
-                <li>Modelamiento y rediseño de procesos.</li>
-                <li>Planificación operacional y coordinación de servicios.</li>
-                <li>Desarrollo de capacidades analíticas para optimización operacional.</li>
+                <li>Diseño e imparto contenidos de Data Science aplicado a Marketing, integrando analítica de datos, visualización, machine learning y toma de decisiones basada en datos.</li>
+                <li>Desarrollo clases prácticas utilizando Python, Jupyter Notebook y herramientas modernas de análisis, con foco en casos reales de negocio, storytelling analítico y aplicaciones de IA en marketing.</li>
+                <li>Participo en evaluación de proyectos, mentoría técnica y formación de habilidades analíticas orientadas al entorno profesional y tecnológico actual.</li>
+                <li>Refuerzo capacidades de liderazgo técnico, comunicación estratégica y transferencia de conocimiento en contextos de transformación digital.</li>
               </ul>
             </div>
           </article>
         </section>
 
         <section aria-labelledby="projects-title">
-          <h2 id="projects-title">Proyectos Seleccionados / Contribuciones Estratégicas</h2>
+          <h2 id="projects-title"><svg class="section-icon" aria-hidden="true"><use href="#icon-layers"></use></svg>Proyectos Seleccionados / Contribuciones Estratégicas</h2>
           <ul>
             <li>Habilité patrones de arquitectura empresarial de datos en entornos financieros regulados para soportar analítica escalable y preparación para IA.</li>
             <li>Contribuí a la evolución de data lakes y plataformas cloud en iniciativas de modernización con múltiples equipos.</li>
@@ -230,7 +336,7 @@
         </section>
 
         <section aria-labelledby="education-title">
-          <h2 id="education-title">Educación</h2>
+          <h2 id="education-title"><svg class="section-icon" aria-hidden="true"><use href="#icon-graduation"></use></svg>Educación</h2>
           <article>
             <h3>Magíster en Data Science</h3>
             <p class="meta">Universidad Adolfo Ibáñez | 2022 – 2023</p>
@@ -242,7 +348,7 @@
         </section>
 
         <section aria-labelledby="tech-title">
-          <h2 id="tech-title">Tecnologías Seleccionadas</h2>
+          <h2 id="tech-title"><svg class="section-icon" aria-hidden="true"><use href="#icon-cpu"></use></svg>Tecnologías Seleccionadas</h2>
           <h3>Cloud y Plataformas</h3>
           <p>AWS · Azure · Docker · Kubernetes · ECS · Lambda · API Gateway · Azure Kubernetes Service · Azure Service Bus · Arquitecturas Serverless</p>
           <h3>Datos y Analítica</h3>
@@ -254,7 +360,7 @@
         </section>
 
         <section aria-labelledby="certifications-title">
-          <h2 id="certifications-title">Certificaciones y Aprendizaje Continuo</h2>
+          <h2 id="certifications-title"><svg class="section-icon" aria-hidden="true"><use href="#icon-award"></use></svg>Certificaciones y Aprendizaje Continuo</h2>
           <ul>
             <li>Machine Learning para Negocios — DataCamp</li>
             <li>Introducción a Machine Learning con Python y Aplicaciones Financieras — Universidad de Chile</li>
@@ -264,7 +370,7 @@
         </section>
 
         <section aria-labelledby="languages-title">
-          <h2 id="languages-title">Idiomas</h2>
+          <h2 id="languages-title"><svg class="section-icon" aria-hidden="true"><use href="#icon-globe"></use></svg>Idiomas</h2>
           <ul>
             <li>Español — Nativo</li>
             <li>Inglés — Competencia profesional de trabajo</li>
@@ -272,7 +378,7 @@
         </section>
 
         <section aria-labelledby="leadership-title">
-          <h2 id="leadership-title">Liderazgo y Valor Estratégico</h2>
+          <h2 id="leadership-title"><svg class="section-icon" aria-hidden="true"><use href="#icon-compass"></use></svg>Liderazgo y Valor Estratégico</h2>
           <ul>
             <li>Liderar la evolución de plataformas empresariales de datos equilibrando arquitectura estratégica y profundidad de ejecución.</li>
             <li>Alinear prioridades de negocio, requerimientos de gobierno y decisiones de arquitectura técnica en contextos regulados.</li>
