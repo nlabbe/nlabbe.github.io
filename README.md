@@ -79,6 +79,6 @@ El CV reserva espacio para foto personal y logos de empresas. Si el archivo no e
 
 - Foto personal: `assets/profile/8c7dc23d-262a-4082-8382-efff15115aa3.JPG`
 - Banco Itaú Chile: `assets/companies/itau.png`
-- Ameris: `assets/companies/ameris.png`
+- Ameris: `assets/companies/ameris.jpg`
 - Metbus S.A.: `assets/companies/metbus.png`
 - Transportes El Túnel: `assets/companies/transportes-el-tunel.png`

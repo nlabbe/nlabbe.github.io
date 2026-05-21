@@ -81,10 +81,10 @@ body {
 }
 
 .profile-photo {
-  width: 5rem;
-  height: 5rem;
+  width: 7rem;
+  height: 7rem;
   border-radius: 50%;
-  font-size: 1.2rem;
+  font-size: 1.45rem;
 }
 
 .profile-photo img,
@@ -246,8 +246,8 @@ li + li {
   }
 
   .profile-photo {
-    width: 4rem;
-    height: 4rem;
+    width: 5.5rem;
+    height: 5.5rem;
   }
 
   .print-btn {
