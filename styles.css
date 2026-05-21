@@ -117,8 +117,36 @@ h3 {
   margin: 0;
 }
 
+h4 {
+  font-size: 0.98rem;
+  margin: 0;
+}
+
 article {
   margin-bottom: 1rem;
+}
+
+.company {
+  border-left: 3px solid var(--border);
+  padding-left: 1rem;
+  margin-bottom: 1.35rem;
+}
+
+.company > header h3 {
+  font-size: 1.05rem;
+}
+
+.role {
+  margin-top: 0.85rem;
+}
+
+.role + .role {
+  border-top: 1px solid var(--border);
+  padding-top: 0.85rem;
+}
+
+.role p:not(.meta) {
+  margin: 0.5rem 0 0;
 }
 
 .meta {
@@ -206,9 +234,10 @@ li + li {
   }
 
   section,
-  article,
+  .role,
   h2,
   h3,
+  h4,
   ul,
   li {
     break-inside: avoid;
