@@ -34,31 +34,31 @@ Luego abre: `http://localhost:8080`.
 
 ## Imprimir o guardar como PDF
 
-- Usa el botón **“Print / Save as PDF”** en la parte superior del CV.
+- Usa el botón **“Imprimir / Guardar como PDF”** en la parte superior del CV.
 - O usa `Ctrl + P` / `Cmd + P`.
 - En el diálogo de impresión:
   - Tamaño: **A4**
   - Márgenes: por defecto del navegador (el CSS ya define `@page`)
-  - Activar/desactivar “Background graphics” es opcional (el diseño print no depende de fondos)
+  - Activar/desactivar “Gráficos de fondo” es opcional (el diseño de impresión no depende de fondos)
 
-## Decisiones de diseño (ATS, responsive, print)
+## Decisiones de diseño (ATS, responsive, impresión)
 
-### ATS Optimization
+### Optimización ATS
 
 - HTML semántico con `header`, `nav`, `main`, `section`, `article`, `h1`, `h2`, `h3`.
-- Texto real (sin imágenes para contenido de experiencia/skills).
+- Texto real (sin imágenes para contenido de experiencia o habilidades).
 - Fechas, cargos y empresas explícitos y fáciles de parsear.
 - Skills y tecnologías en texto plano.
 - Sin tablas para layout principal ni componentes visuales que reemplacen texto.
 
-### Responsive Design
+### Diseño responsive
 
-- Diseño principal tipo executive resume con lectura lineal.
-- Tipografía system font para máxima compatibilidad y rendimiento.
+- Diseño principal tipo CV ejecutivo con lectura lineal.
+- Tipografía del sistema para máxima compatibilidad y rendimiento.
 - Layout adaptable para desktop/tablet/mobile con media queries.
 - Jerarquía visual clara, espaciado generoso y contraste alto.
 
-### Print / PDF (A4)
+### Impresión / PDF (A4)
 
 - Reglas específicas en `@media print` para salida profesional.
 - Botón interactivo oculto en impresión.
