@@ -60,6 +60,43 @@ body {
   align-items: flex-start;
 }
 
+.identity {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  min-width: 0;
+}
+
+.profile-photo,
+.company-logo {
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  flex: 0 0 auto;
+  border: 1px solid var(--border);
+  background: #eef3f8;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.profile-photo {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
+
+.profile-photo img,
+.company-logo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: var(--surface);
+}
+
 h1 {
   margin: 0;
   font-size: clamp(1.8rem, 2.8vw, 2.25rem);
@@ -132,8 +169,31 @@ article {
   margin-bottom: 1.35rem;
 }
 
+.company-header {
+  display: flex;
+  gap: 0.8rem;
+  align-items: flex-start;
+}
+
+.company-logo {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.company-details {
+  min-width: 0;
+}
+
 .company > header h3 {
   font-size: 1.05rem;
+}
+
+.company-summary {
+  margin: 0.2rem 0 0;
+  color: var(--text);
+  font-size: 0.95rem;
 }
 
 .role {
@@ -179,6 +239,15 @@ li + li {
 
   .header-top {
     flex-direction: column;
+  }
+
+  .identity {
+    align-items: flex-start;
+  }
+
+  .profile-photo {
+    width: 4rem;
+    height: 4rem;
   }
 
   .print-btn {

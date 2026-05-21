@@ -72,3 +72,13 @@ Luego abre: `http://localhost:8080`.
 - Edita datos personales y contenido en `index.html`.
 - Ajusta paleta/espaciado/tipografía en `styles.css`.
 - Si publicas en un dominio distinto, actualiza `og:url` en el `<head>` de `index.html`.
+
+## Imágenes
+
+El CV reserva espacio para foto personal y logos de empresas. Si el archivo no existe, se muestra un marcador con iniciales.
+
+- Foto personal: `assets/profile/nicolas-labbe.jpg`
+- Banco Itaú Chile: `assets/companies/itau.png`
+- Ameris: `assets/companies/ameris.png`
+- Metbus S.A.: `assets/companies/metbus.png`
+- Transportes El Túnel: `assets/companies/transportes-el-tunel.png`
