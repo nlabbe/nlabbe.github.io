@@ -77,7 +77,7 @@ Luego abre: `http://localhost:8080`.
 
 El CV reserva espacio para foto personal y logos de empresas. Si el archivo no existe, se muestra un marcador con iniciales.
 
-- Foto personal: `assets/profile/nicolas-labbe.jpg`
+- Foto personal: `assets/profile/8c7dc23d-262a-4082-8382-efff15115aa3.JPG`
 - Banco Itaú Chile: `assets/companies/itau.png`
 - Ameris: `assets/companies/ameris.png`
 - Metbus S.A.: `assets/companies/metbus.png`
