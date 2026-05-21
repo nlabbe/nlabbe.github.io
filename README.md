@@ -82,3 +82,9 @@ El CV reserva espacio para foto personal y logos de empresas. Si el archivo no e
 - Ameris: `assets/companies/ameris.jpg`
 - Metbus S.A.: `assets/companies/metbus.png`
 - Transportes El Túnel: `assets/companies/transportes-el-tunel.png`
+- Universidad Finis Terrae: `assets/companies/finis-terrae.png`
+
+## Fuentes
+
+- Roboto se sirve localmente desde `assets/fonts/roboto/`.
+- Si Roboto no carga, `styles.css` mantiene fallback a fuentes del sistema.
